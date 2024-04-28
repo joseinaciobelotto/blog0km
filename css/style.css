@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+    
+};
+
+.fonte{
+    font-family: "Ubuntu", sans-serif;
+ 
+}
+
+.headerDiv{
+    background-color: rgba(255, 255, 255, 0.87);
+    padding-top: 2vh;
+    border-radius:  0px  0px 50px 50px ;
+    border-radius:  0px  0px 50px 50px ;
+    border: solid 1px rgb(255, 255, 255) ;
+    box-shadow: 0px 0px 20px 0px rgba(0, 8, 36, 0.384);
+  
+}
+.headerDiv p
+{
+  
+    color: rgb(115, 115, 119);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+ text-align: center;
+
+}
+.nomeBlog 
+{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+    font-size:calc(20px + 2vw);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+
+}
+body{
+    background-image: url("/images/pexels-photo-12852734.jpg");
+    background-position: bottom ;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-color: #0596c2f5!important;
+}
+.postsP
+
+{
+
+ text-align: center;
+
+}
+.meio{
+    margin-inline: 2%;
+}
+.posts div{
+     margin-bottom: 8% ;
+  /*  border: solid 1px ;
+    background-color: rgba(233, 233, 233, 0.788);*/
+    border-radius:  0px  0px 50px 50px ;
+    border: solid 1px rgb(255, 255, 255) ;
+    box-shadow: 0px 0px 20px 0px rgba(0, 8, 36, 0.151);
+    border-radius: 10px;
+    width: 30%;
+    background-color: hsla(0, 0%, 100%, 0.87);
+  
+}
+
+.posts div p{
+  
+color: rgb(12, 12, 12);
+   font-size: larger;
+   font-weight: 600;
+   padding-top: 5%;
+   
+ 
+}
+.sobreP
+{
+   
+    color: rgb(1, 0, 7);
+    font-family: "Ubuntu", sans-serif;
+    
+    font-size: 1vw;
+    
+}
+
+
+.sobreStyle p{
+  
+    color: rgb(48, 45, 65);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    
+}
+
+.sobreStyle
+{
+    background-color: rgba(255, 255, 255, 0.87);
+   
+    padding-top: 1vh;
+    border-radius: 5px 0px 0px 20px;
+ 
+    border: solid 1px rgb(255, 255, 255) ;
+    box-shadow: 0px 0px 20px 0px rgba(0, 8, 36, 0.384); 
+}
+.footerDiv p
+{
+ text-align: center;
+
+}
