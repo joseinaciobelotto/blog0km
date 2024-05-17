@@ -1,24 +1,35 @@
-const arrayTeste = ["Título Aaa","Título Bbb","Título Ccc" ,"Título Ddd","Título Eee","Título Fff","Título Ggg","Título Hhh","Título Iii","Título Jjj","Título Kkk","Título Lll","Título Mmm"];
-const arrayTesteImagens = ["./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"./images/Nova-Strada-Ultra-2024 (18).jpg"]
+const arrayTeste = ["TÍTULO AAA","TÍTULO BBB","TÍTULO CCC" ,"TÍTULO DDD","TÍTULO EEE","TÍTULO FFF","TÍTULO GGG","TÍTULO HHH","TÍTULO III","TÍTULO JJJ","TÍTULO KKK","TÍTULO LLL","TÍTULO MMM"];
+const arrayTesteImagens = ["./images/Nova-Strada-Ultra-2024.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024.jpg","./images/Nova-Strada-Ultra-2024.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024.jpg","./images/Nova-Strada-Ultra-2024.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024.jpg","./images/Nova-Strada-Ultra-2024.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024.jpg"]
 
 
 let containerPostsMain = document.querySelector(".mainPosts");
 let containerPostsSolo = document.querySelector(".mainPostsSolo");
+let divDestaque = document.querySelector(".divDestaque");
 
 
 
-
-
-let auxDiv=0;
+let indexmodified=0;
+let auxDiv=1;
 
 let numeorDePost= arrayTeste.length;
 
 let positionArray
 let rowPostsMain;
+
+
+divDestaque.addEventListener("click", (e)=>{
+            
+    window.location.href = "postIndividual.html";
+
+    positionArray = 0;
+
+    localStorage.setItem('indexPost',  positionArray);
+});
+
 
 
 function mostrarPosts() 
@@ -27,13 +38,13 @@ function mostrarPosts()
     arrayTeste.forEach((element, i) => 
     {
 
-
-        if (auxDiv == 0)
+        indexmodified=i+1;
+        if (auxDiv == 1)
         {
         rowPostsMain = document.createElement("div") ;
         rowPostsMain.className = "row posts";
         rowPostsMain.style.justifyContent = "space-around";
-        auxDiv=2;
+        auxDiv=3;
         }
      
        
@@ -41,32 +52,41 @@ function mostrarPosts()
 
         postsDiv.style.cursor = "pointer";
         
-        if(auxDiv ==1)
+        if(auxDiv ==2)
         {
             postsDiv.className = "col-3 meio postsP";
         }else{
             postsDiv.className = "col-3 meio postsP";
         }
         let postsP = document.createElement("p");
-        let postsPinfo = document.createElement("p");
-        let postImgP = document.createElement("img");
-        postsPinfo.innerHTML="Saber Mais"
+       // let postsPinfo = document.createElement("p");
+        let postImgP = document.createElement("div");
+      /*  postsPinfo.innerHTML="Saber Mais"
         postsPinfo.style.fontSize= "120%";
         postsPinfo.style.textAlign= "center";
-        postsPinfo.style.paddingTop= "1vw";
-    postImgP.src=arrayTesteImagens[i];
-    postImgP.style.width="100%";
-    postImgP.style.borderRadius="10px";
+        postsPinfo.style.paddingTop= "1vw";*/
+    postImgP.style.backgroundImage="url("+arrayTesteImagens[i]+")";
+    postImgP.style.height="300px";
+    postImgP.style.overflow="hidden"
+    postImgP.style.borderRadius="0px 0px 0px 0px";
+  //  postImgP.style.boxShadow="0px -30px 30px 0px rgba(255, 255, 255, 0.34)";
+   // postImgP.style.mixBlendMode="diference";
+    postImgP.style.backgroundSize="140%";
+    postImgP.style.width="auto";
+    postImgP.style.backgroundPosition="center";
+ postsDiv.appendChild(postImgP);
     postsDiv.appendChild(postsP)
 
-       postsDiv.appendChild(postImgP);
-       postsDiv.appendChild(postsPinfo)
+       
+       //postsDiv.appendChild(postsPinfo)
 
         postsP.innerHTML= element;
-        postsP.style.fontSize= "120%";
+        postsP.style.fontSize= "140%";
         postsP.style.paddingBlock= "1vw";
-        postsDiv.style.height = "auto";
-        postsDiv.style.width = "400px";
+        postsDiv.style.height = "";
+       // postsDiv.style.backgroundImage="url("+arrayTesteImagens[i]+")";
+       // postsDiv.style.backgroundSize="1000%"
+        postsDiv.style.width = "48%";
         rowPostsMain.appendChild(postsDiv);
 
         containerPostsMain.appendChild(rowPostsMain);
@@ -77,7 +97,7 @@ function mostrarPosts()
             
             window.location.href = "postIndividual.html";
 
-            positionArray = JSON.stringify(i);
+            positionArray = JSON.stringify(i+1);
    
             localStorage.setItem('indexPost',  positionArray);
         
