@@ -1,9 +1,9 @@
 const arrayTesteHere = ["Título Aaa","Título Bbb","Título Ccc" ,"Título Ddd","Título Eee","Título Fff","Título Ggg","Título Hhh","Título Iii","Título Jjj","Título Kkk","Título Lll","Título Mmm"];
-const arrayTesteImagens = ["../images/Nova-Strada-Ultra-2024 (18).jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"../images/Nova-Strada-Ultra-2024 (18).jpg","../images/Nova-Strada-Ultra-2024 (18).jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"../images/Nova-Strada-Ultra-2024 (18).jpg","../images/Nova-Strada-Ultra-2024 (18).jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"../images/Nova-Strada-Ultra-2024 (18).jpg","../images/Nova-Strada-Ultra-2024 (18).jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg","../images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"../images/Nova-Strada-Ultra-2024 (18).jpg"];
+const arrayTesteImagens = ["./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
+"./images/Nova-Strada-Ultra-2024 (18).jpg"]
 
 
 let containerPostsMainHere = document.querySelector(".mainPosts2");
