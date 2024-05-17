@@ -3,7 +3,7 @@ const arrayTesteImagens = ["./images/Nova-Strada-Ultra-2024 (18).jpg","./images/
 "./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
 "./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
 "./images/Nova-Strada-Ultra-2024 (18).jpg","./images/Nova-Strada-Ultra-2024 (18).jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg","./images/lamborghini-aventador-s-roadster-2018-11.jpg",
-"./images/Nova-Strada-Ultra-2024 (18).jpg"]
+"./images/Nova-Strada-Ultra-2024 (18).jpg",]
 
 
 let containerPostsMainHere = document.querySelector(".mainPosts2");

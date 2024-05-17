@@ -46,7 +46,7 @@
 
 }
 body{
-    background-image: url("/images/pexels-photo-12852734.jpg");
+    background-image: url("../images/pexels-photo-12852734.jpg");
     background-position: bottom ;
     background-size: 200%;
     background-repeat: no-repeat;
