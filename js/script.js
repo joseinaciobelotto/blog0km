@@ -78,7 +78,7 @@ function mostrarPosts()
         let postImgP = document.createElement("div");
       
         postImgP.style.backgroundImage="url("+arrayTesteImagens[i]+")";
-        postImgP.style.height="20vw";
+        postImgP.style.height="15vw";
         postImgP.style.overflow="hidden"
         postImgP.style.borderRadius="0px 0px 0px 0px";
         postImgP.style.backgroundSize="140%";

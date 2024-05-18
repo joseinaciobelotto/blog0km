@@ -166,6 +166,7 @@ body
 
 .headerDivSand
 {
+    cursor: pointer;
     display: none; 
 }
     
@@ -174,11 +175,13 @@ body
     
 .headerDiv
 {
+    cursor: pointer;
     transition: 200ms;
     display: none;
 }
 .headerDivSand
 {
+    cursor: pointer;
     display: block;
     color: white;
 }
