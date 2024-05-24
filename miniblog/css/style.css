@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+    
+};
+
+.fonte{
+    font-family: "Ubuntu", sans-serif;
+ 
+}
+
+.headerDiv{
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 2vh;
+    border-radius:  0px  0px 0px 0px ;
+    border-radius:  0px  0px 0px 0px ;
+   /* border: solid 1px rgb(255, 255, 255) ;*/
+    box-shadow: 0px 0px 20px 0px rgba(0, 8, 36, 0.384);
+  
+}
+.headerDiv p
+{
+   
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+ text-align: center;
+
+}
+.headerDiv p:hover
+{
+    color: rgb(41, 177, 231);
+
+}
+
+.nomeBlog 
+{
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+    font-size:calc(20px + 2vw);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+
+}
+body{
+   /*background-image: url("../images/pexels-photo-12852734.jpg");*/
+    background-position: bottom ;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-color: #0a2238f5!important;
+}
+
+.tituloDestaque{
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(255, 255, 255);
+     font-size: 1.5rem;
+
+
+    }
+    .divDestaque
+    { 
+        transition: 200ms;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+.divDestaque div:hover
+{
+    transition: 200ms;
+    opacity: 80%;
+    color: rgb(41, 177, 231);
+
+}
+
+.tituloDestaque p {
+    text-align: left;
+}
+.p2titulo
+{
+    color: rgb(0, 107, 107);
+}
+.postsP3 p 
+{
+    color: aliceblue;
+}
+
+.postsP2
+{
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+   
+     font-size: 1rem;
+}
+.postsP
+{
+    border: solid 0px rgb(255, 255, 255) ;
+    margin-bottom: 2% ;
+    box-shadow: 0px 0px 0px 0px rgba(0, 8, 36, 0.151);
+ text-align: center;
+
+}
+.meio{
+    margin-inline:0%;
+}
+.posts div{
+    transition: 200ms;
+    padding: 0;
+   /* background-color: rgb(255, 255, 255);*/
+  /*  border: solid 1px ;
+   */
+  /*  border-radius:  0px  0px 50px 50px ;*/
+  /*  border: solid 1px rgb(255, 255, 255) ;
+   */
+ 
+    border-radius:0;
+    width: 30%;
+    
+  
+}
+.posts div:hover
+{
+    transition: 200ms;
+    transform: translateY(-2px);
+    color: rgb(41, 177, 231);
+    opacity: 90%;
+}
+.posts div p{
+  
+color: rgb(255, 255, 255);
+text-align: left;
+   font-size: larger;
+   font-weight: 600;
+    
+   
+ 
+}
+
+
+
+.sobreStyle p{
+    cursor: pointer;
+    color: rgb(48, 45, 65);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    
+}
+.sobreStyle p:hover{
+    color: rgb(41, 177, 231);
+    
+    
+}
+.sobreStyle
+{
+    background-color: rgba(255, 255, 255, 1);
+   
+    padding-top: 1vh;
+    border-radius: 0px 0px 0px 0px;
+ 
+    border: solid 1px rgb(255, 255, 255) ;
+    box-shadow: 0px 0px 0px 0px rgba(0, 8, 36, 0.384); 
+}
+.footerDiv p
+{
+ text-align: center;
+
+}
