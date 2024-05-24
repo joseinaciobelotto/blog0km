@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Gajraj+One&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Russo+One&display=swap');
 
 *{
     margin: 0;
@@ -8,170 +10,216 @@
     
 };
 
-.fonte{
-    font-family: "Ubuntu", sans-serif;
+.fonte
+{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
  
 }
 
-.headerDiv{
-    background-color: rgba(255, 255, 255, 1);
+.headerDiv
+{
+    background-color: rgb(20, 20, 20);
     padding-top: 2vh;
     border-radius:  0px  0px 0px 0px ;
     border-radius:  0px  0px 0px 0px ;
    /* border: solid 1px rgb(255, 255, 255) ;*/
     box-shadow: 0px 0px 20px 0px rgba(0, 8, 36, 0.384);
-  
+    display: flex;
 }
+
 .headerDiv p
 {
-   
     cursor: pointer;
-    color: rgb(0, 0, 0);
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 600;
- text-align: center;
-
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-weight:lighter;
+    text-align: center;
+    font-size:large;
+    border-inline: solid 1px;
 }
+
 .headerDiv p:hover
 {
     color: rgb(41, 177, 231);
-
 }
 
 .nomeBlog 
 {
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Russo One", sans-serif;
+    letter-spacing: 10px; 
     font-weight: 700;
     font-style: normal;
-    
     font-size:calc(20px + 2vw);
     text-align: center;
+
     color: rgb(255, 255, 255);
-
-
 }
-body{
-   /*background-image: url("../images/pexels-photo-12852734.jpg");*/
+
+body
+{
+    background-image: url("../images/R.jpg");
+    
     background-position: bottom ;
-    background-size: 200%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-color: #0a2238f5!important;
+    background-color: rgba(0,30,64,255)!important;
 }
 
-.tituloDestaque{
-    font-family: "Ubuntu", sans-serif;
+.tituloDestaque
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+    
+.divDestaque
+{ 
+    transition: 600ms;
     color: rgb(255, 255, 255);
-     font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 0 !important;
+    background-color: black;
+}
 
-
-    }
-    .divDestaque
-    { 
-        transition: 200ms;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-    }
-.divDestaque div:hover
+.divDestaque:hover
 {
-    transition: 200ms;
-    opacity: 80%;
+    transition: 300ms;
     color: rgb(41, 177, 231);
-
+    opacity: 90%;
+   
 }
 
-.tituloDestaque p {
+.tituloDestaque p 
+{
     text-align: left;
-}
-.p2titulo
-{
-    color: rgb(0, 107, 107);
-}
-.postsP3 p 
-{
-    color: aliceblue;
+    padding-left: 20px;
 }
 
 .postsP2
 {
     color: white;
     font-size: larger;
-    font-weight: 500;
-    font-family: "Ubuntu", sans-serif;
-   
-     font-size: 1rem;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
 }
+
 .postsP
 {
     border: solid 0px rgb(255, 255, 255) ;
     margin-bottom: 2% ;
     box-shadow: 0px 0px 0px 0px rgba(0, 8, 36, 0.151);
- text-align: center;
-
+    text-align: center;
+    
 }
-.meio{
+
+.meio
+{
     margin-inline:0%;
 }
-.posts div{
-    transition: 200ms;
-    padding: 0;
-   /* background-color: rgb(255, 255, 255);*/
-  /*  border: solid 1px ;
-   */
-  /*  border-radius:  0px  0px 50px 50px ;*/
-  /*  border: solid 1px rgb(255, 255, 255) ;
-   */
- 
-    border-radius:0;
-    width: 30%;
-    
-  
-}
-.posts div:hover
+
+.posts div
 {
-    transition: 200ms;
-    transform: translateY(-2px);
+    transition: 600ms;
+    padding: 0;
+    border-radius:0;
+    
+}
+
+
+.postsP:hover
+{
+    transition: 300ms;
+    transform: translateY(1px);
     color: rgb(41, 177, 231);
     opacity: 90%;
 }
-.posts div p{
-  
-color: rgb(255, 255, 255);
-text-align: left;
-   font-size: larger;
-   font-weight: 600;
-    
-   
- 
+
+.postsP 
+{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: larger;
+    font-weight: 600;
 }
 
-
-
-.sobreStyle p{
+.sobreStyle p
+{    
     cursor: pointer;
-    color: rgb(48, 45, 65);
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: large;
     
 }
-.sobreStyle p:hover{
+
+.sobreStyle p:hover
+{
     color: rgb(41, 177, 231);
     
-    
 }
+
 .sobreStyle
 {
-    background-color: rgba(255, 255, 255, 1);
-   
+    background-color: rgb(20, 20, 20);
     padding-top: 1vh;
-    border-radius: 0px 0px 0px 0px;
- 
-    border: solid 1px rgb(255, 255, 255) ;
+    border-radius: 0px 0px 0px 5px;
+   
     box-shadow: 0px 0px 0px 0px rgba(0, 8, 36, 0.384); 
 }
+
 .footerDiv p
 {
  text-align: center;
+ font-size: medium;
+ font-weight: 500;
+ color: rgba(255, 255, 255, 0.897);
+}
 
+.headerDivSand
+{
+    cursor: pointer;
+    display: none; 
+}
+
+.mainPosts
+{
+    padding-inline:0px;
+}
+    
+@media screen and (max-width: 991px) 
+{
+    
+.headerDiv
+{
+    cursor: pointer;
+    transition: 200ms;
+    display: none;
+}
+.headerDivSand
+{
+    cursor: pointer;
+    display: block;
+    color: white;
+}
+
+.postDiv
+{
+    width: 100%;
+   
+   
+}
+
+.mainPosts
+{
+    padding-inline: 4.5%;
+}
+.sobreStyle{
+   display: none;
+}
 }
