@@ -192,6 +192,37 @@ body
     padding-inline:0px;
 }
     
+.postMainContainer
+{
+    padding: 3vw;
+
+}
+
+.card
+{
+    border-radius: 0;
+    background-color: black;
+    color: white ;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size:  large
+}
+
+.card-body
+{
+    padding: 0;
+    padding-left: 0.2vw;
+    padding-top: 0.2vw;
+    margin: 0;
+}
+
+.text-muted
+{
+    color: azure;
+}
+
+
 @media screen and (max-width: 991px) 
 {
     
