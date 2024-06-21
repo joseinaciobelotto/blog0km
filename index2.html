@@ -48,12 +48,12 @@
     <div class="postMainContainer">
     <div class="row" ng-controller="Rest">
         <div class="col-md-4" ng-repeat="publicacao in publicacoes; ">  
-          <a href="postIndividual.html">
+          <a href="postIndividual.html?id={{$index}}">
             <div class="card mb-4">
             <img ng-src="{{ publicacao.thumbImage }}" >
             <div class="card-body">
               <p class="card-text">{{ publicacao.title }}</p>
-              <p class="postIdA">{{$index}}</p>
+              <input type="hidden" value='{{$index}}' class="postIdA">
             </div>
           </div>
         </div>
