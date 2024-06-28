@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="blog">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,32 +45,40 @@
 
 <div class="main ">
 
-        <div class="container mt-5 pb-5 publicacoes">
-            <div class="row  justify-content-left divDestaque p-0 ">
-                <div class="col-lg-9 img-fluid p-0"><img src="./images/xiaomi-su7.jpg" style="width: 100%;" alt=""></div>
-                <div class="col-lg-3 tituloDestaque mt-3 p-0"><p style="font-size: medium; color: rgb(60, 242, 255);">DESTAQUE<p><p style=" font-weight: 600; font-size: x-large;">XIAOMI SU7: O CARRO ELÉTRICO QUE SURPREENDEU O MERCADO!<p></p></div>
-         </div>
-                <div class="row mt-5 justify-content-center"> 
-             <div class="col-lg-9  mainPosts " >
-                   
-                </div>
-                <div class="col-lg-9  mainPostsSolo " style="display:none;">
-
-                </div>
-                <div class="col-lg-3">
-                    <div class="position-sticky " style="top: 4vw">
-                
-                    <div class="p-4 mb-5 sobreStyle"><p class= "sobreP">Sobre</p></div>
-                    <div class="p-4 mb-5 mb-5 sobreStyle" ><p>Postagens Por Data</p></div>
-                    <div class="p-4 mb-5 sobreStyle" ><p>Outras Plataformas</p></div>
-                </div>
-                </div>
-            
+    <div class="row">
+        <div class="col-md-9">
+   
+    <div class="postMainContainer">
+    <div class="row" ng-controller="Rest">
+        <div class="col-md-4" ng-repeat="publicacao in publicacoes; ">  
+          <a href="postIndividual.html?id={{$index}}">
+            <div class="card mb-4">
+            <img ng-src="{{ publicacao.thumbImage }}" >
+            <div class="card-body">
+              <p class="card-text">{{ publicacao.title }}</p>
             </div>
-          
+          </div>
+        </a>
         </div>
+        
+    </div>
+       
+    </div>
+    
+        </div>
+        <div class="col-lg-3" style="margin-top: 3vw;">
+            <div class="position-sticky " style="top: 4vw">
+                <div class="p-4 mb-5 sobreStyle"><p class= "sobreP">Sobre</p></div>
+                <div class="p-4 mb-5 mb-5 sobreStyle" ><p>Postagens Por Data</p></div>
+                <div class="p-4 mb-5 sobreStyle" ><p>Outras Plataformas</p></div>
+            </div>   
+        </div>
+      </div>
+    </div>
 
-</div>
+    
+    
+
 
     <footer class="mt-5"  style="background-color: rgba(10, 11, 17, 0.932); color: rgb(255, 255, 255);">
 
@@ -96,5 +104,5 @@
 
 
 </body>
-<script src="js/script.js"></script>
+<script src="js/script3.js"></script>
 </html>

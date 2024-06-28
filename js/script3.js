@@ -1,4 +1,4 @@
-let id = document.getElementsByClassName(".postIdA");
+
 
 
 angular.module('blog', []);
@@ -14,6 +14,7 @@ angular.module('blog').controller('Rest', function ($scope, $http)
 
 });
 
+angular.module('blog2', []);
 angular.module('blog2').controller('Rest', function ($scope, $http)
 {
 
@@ -25,8 +26,8 @@ var id = url.split('?')[1];
   $http.get('https://api-fake-blog.onrender.com/postagem/'+id).success(function(dataSolo)
    {
 
-          $scope.publicacoeSolo = dataSolo;
-        
+          $scope.publicacao = dataSolo;
+          console.log( dataSolo);
     }
   );
   
@@ -69,7 +70,7 @@ if(screen.width>991)
         
     });
 
-let auxArray = localStorage.getItem('indexPost');
+
 
 
 /*
